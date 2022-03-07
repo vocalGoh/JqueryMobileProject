@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//외부함수
+function countVisit(){
+	var count=0;
+	
+	//내부함수
+	var plus=function(){
+		return count+=1;
+	};
+	
+	alert(plus);
+	return plus;
+}
+
+var num=countVisit();
+num();//+1
+num();//+1
+num();//+1
+alert(num());//결과 4
+
+
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

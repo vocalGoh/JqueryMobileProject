@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8.Mariann Reathling</title>
+<link rel="stylesheet"
+	href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<style type="text/css">
+.player { width: 100%; }
+img {margin:0px 0px 0px 7%;}
+</style>
+
+</head>
+<body>
+
+	<div data-role="page">
+	
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>SONIC STONES</h1>
+		</div>
+		
+		<div data-role="content">
+			<div class="ui-bar ui-bar-a" style="text-align:center;">8.Mariann Reathling</div>
+			<br> 
+			<img src="../images/before_the_storm.jpg" width="400px" height="400px" text-align="center">
+			<audio id="myAudio" class="player" controls="controls" preload="metadata" autoplay="autoplay">
+				<source src="8. Mariann Reathling.mp3" type="audio/mp3">
+			</audio>
+
+			<div data-role="collapsible-set" data-theme="b"
+				data-content-theme="a">
+				<div data-role="collapsible">
+					<h3>lyrics</h3>
+					<p>If you become an angel, come to me.</p>
+					<p>The candle has not turned out yet.</p>
+					<p>Do you think I have a bright tomorrow?</p>
+					<p>I can live only if I keep this light.</p>
+					<br>
+					<br>
+					<p>The fight is not over yet.</p>
+					<p>The white angel fell into hell.</p>
+					<p>The fight is not over yet.</p>
+					<p>The devil went up to heaven.</p>
+					<p>The zombies' heaven.</p>
+					<p>It's just the beginning.</p>
+					<br>
+					<br>
+					<p>If you give me a strength, can I change the world?</p>
+					<p>If you give me soul can I hold on?</p>
+					<p>Do you think I have a bright tomorrow?</p>
+					<p>I can live only if I keep this light.</p>
+					<br>
+					<br>
+					<p>Higher? what the fuck is higher?</p>
+					<p>Feeling? What this fuckin feeling?</p>
+					<p>Bitch? I am a bitch.</p>
+					<p>Love? What the fuck is Love?</p>
+					<br>
+					<br>
+					<p>The dog barking for all day is dead!</p>
+					<p>No matter how loud I cried,</p>
+					<p>the echo didn't come back!</p>
+					<p>Feel the death ~ Life is happy!</p>
+					<br>
+					<br>
+					<p>I couldn‘t feel anything when I was gone.</p>
+					<p>I don’t know the dreams. I don’t know love. Damn it!</p>
+					<p>I don’t know the truth.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" class="ui-bar" data-theme="a" style="text-align: center;">
+			<div data-role="controlgroup" data-type="horizontal" data-theme="a">
+			
+				<a id="prev" data-role="button" href="track7.html" data-rel="dialog">
+					<img src="../images/prev.png" width="25.6px" height="25.6px">
+				</a>
+				<a id="song_list" data-role="button" href="../sonicstones.html">
+					<img src="../images/list1.png" width="25.6px" height="25.6px">
+				</a> 
+				<a id="next" data-role="button" href="track9.html" data-rel="dialog">
+					<img src="../images/next.png" width="25.6px" height="25.6px">
+				</a>
+			</div>
+		</div>
+	</div>
+		
+	
+	<script>
+	
+    var audio = document.getElementById("myAudio");
+   
+	//prev 버튼 클릭시 음악 멈추면서 이전곡으로 이동
+	$("#prev").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+	
+	//next 버튼 클릭시 음악 멈추면서 다음곡으로 이동
+	$("#next").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+	
+	</script>
+
+
+</body>
+</html>

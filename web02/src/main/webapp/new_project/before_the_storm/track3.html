@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3.Chocolate Milk</title>
+<link rel="stylesheet"
+	href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<style type="text/css">
+.player { width: 100%; }
+img {margin:0px 0px 0px 7%;}
+</style>
+
+</head>
+<body>
+
+	<div data-role="page">
+	
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>SONIC STONES</h1>
+		</div>
+		
+		<div data-role="content">
+			<div class="ui-bar ui-bar-a" style="text-align:center;">3.Chocolate Milk</div>
+			<br> 
+			<img src="../images/before_the_storm.jpg" width="400px" height="400px" text-align="center">
+			<audio id="myAudio" class="player" controls="controls" preload="metadata" autoplay="autoplay">
+				<source src="3. Chocolate Milk.mp3" type="audio/mp3">
+			</audio>
+
+			<div data-role="collapsible-set" data-theme="b"
+				data-content-theme="a">
+				<div data-role="collapsible">
+					<h3>lyrics</h3>
+					<p>The time has come! Follow me all! It's starting now!</p>
+					<br>
+					<br>
+					<p>Do what you want! Time does not wait for you.</p>
+					<p>Do what you want! Don’t stop and keep running like this.</p>
+					<p>Do what you want! You've been doing all right.</p>
+					<p>Do what you want! Now it is time for you to say!</p>
+					<br>
+					<br>
+					<p>Everything is alright! You don’t have to cry now.</p>
+					<p>Shout for all! everyone can look at you now!</p>
+					<p>The time has come! Follow me all! It's starting now!</p>
+					<br>
+					<br>
+					<p>Do what you want! Forget about the hard times.</p>
+					<p>Do what you want! Forget those who have left you!</p>
+					<p>Do what you want! You've been doing all right.</p>
+					<p>Do what you want! Now it is time for you to say!</p>
+					<br>
+					<br>
+					<p>It doesn’t matter if you hate me.</p>
+					<p>You and I are in different ways anyway!</p>
+					<p>Do you know what the real thing is?</p>
+					<p>Just raise your middle finger!</p>
+					<p>Do you know what the real thing is?</p>
+					<p>That's what you want right now!</p>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" class="ui-bar" data-theme="a" style="text-align: center;">
+			<div data-role="controlgroup" data-type="horizontal" data-theme="a">
+			
+				<a id="prev" data-role="button" href="track2.html" data-rel="dialog">
+					<img src="../images/prev.png" width="25.6px" height="25.6px">
+				</a>
+				<a id="song_list" data-role="button" href="../sonicstones.html">
+					<img src="../images/list1.png" width="25.6px" height="25.6px">
+				</a>
+				<a id="next" data-role="button" href="track4.html" data-rel="dialog">
+					<img src="../images/next.png" width="25.6px" height="25.6px">
+				</a>
+			</div>
+		</div>
+	</div>
+		
+	
+	<script>
+	
+    var audio = document.getElementById("myAudio");
+   
+	//prev 버튼 클릭시 음악 멈추면서 이전곡으로 이동
+	$("#prev").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+	
+	//next 버튼 클릭시 음악 멈추면서 다음곡으로 이동
+	$("#next").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+
+	
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../include/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+var myObj, x;
+
+//{"변수명":"값", "변수명":"값",..} 객체 
+myObj = {name:"Kim", age:30, city:"Seoul"}; 
+//json 형식의 데이터
+//x=myObj.name;
+x=myObj.age;
+//x=myObj.city;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>

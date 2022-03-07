@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>jQuery Mobile</title>
+<link rel="stylesheet"
+  href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script
+  src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+  <!-- 위 jquery관련 코드를 모두 지우면 필드셋효과가 보인다. -->
+  <div data-role="page" id="page1">
+    <div data-role="header">
+      <h1>header 영역</h1>
+    </div>
+    <div data-role="content">
+      <form>
+        <h1>동아리 회원 가입</h1>
+        <!-- jQueryMobile에서는 fieldset효과가 안나타난다. -->
+        <fieldset>
+          <legend>필수 정보</legend>
+          <table>
+            <tr>
+              <td><label>학번</label></td>
+              <td><input type="text" value="202109"></td>
+            </tr>
+            <tr>
+              <td><label>이름</label></td>
+              <!-- data-role="none" : jQueryMobile의 UI효과를 막음 -->
+              <td><input value="홍길동" data-role="none"></td>
+            </tr>
+          </table>
+        </fieldset>
+        <input type="submit" value="확인"> <input type="reset"
+          value="취소" data-role="none">
+      </form>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>footer 영역</h4>
+    </div>
+  </div>
+</body>
+</html>

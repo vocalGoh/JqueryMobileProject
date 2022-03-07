@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<style type="text/css">
+.ui-icon-my-con:after {
+  background-image: url("../images/buttonicon1.png");
+  background-size: 18px 18px;
+}
+
+</style>
+
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1>머리말(header)영역</h1>
+		</div>
+		<div data-role="content">
+   <button data-icon="my-icon">사용자정의아이콘1</button> 
+   <input type="button" value="사용자정의아이콘2" data-icon="my-con">
+   <a href="#" data-role="button" data-icon="my-con">사용자정의아이콘3</a>
+
+		</div>
+		<div data-role="footer">
+			<h4>꼬리말(footer)영역</h4>
+		</div>
+	</div>
+</body>
+</html>

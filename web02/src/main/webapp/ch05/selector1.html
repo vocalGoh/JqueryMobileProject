@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 이 코드가 없으면 jquery가 실행되지 않음 -->
+<script src="../include/jquery-3.6.0.min.js"></script>
+<!-- 사이트에서 링크시키는 방법 CDN 방식 -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<script type="text/javascript">
+//$ => jQuery
+//$().함수();
+//$(선택자).이벤트(콜백함수)
+//$(document).ready(function(){}); 정식표현
+//$(function(){}); 약식표현
+
+$(function(){ //약식표현
+//$(document).ready(function(){
+	$("h2").click(function(){
+		$(this).hide();//클릭한 태그가 숨겨짐
+	});
+});
+
+</script>
+
+</head>
+<body>
+<h2>첫번째 h2</h2>
+<h2>두번째 h2</h2>
+<h2>세번째 h2</h2>
+
+</body>
+</html>

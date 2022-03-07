@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+   <a href="index.html" data-icon="home">홈</a> 
+			<h1>유명 레스토랑</h1>
+		</div>
+		<div data-role="content">
+   <div class="ui-grid-a">
+    <div class="ui-block-a">
+     <h1>퍼 세이</h1>
+     <p><strong>뉴욕 퍼세이 레스토랑</strong></p>
+     <p>메뉴 : </p>
+     <ul>
+      <li>파스타</li>
+      <li>해물리조뜨</li>
+      <li>안심스테이크</li>
+     </ul> 
+    </div>
+    <div class="ui-block-b">
+     <p><img src="images/rest01.jpg"></p>
+     <p><a href="https://www.thomaskeller.com/perseny" 
+     rel="external" data-role="button">웹사이트</a></p>
+    </div>
+   </div> 
+   <hr>
+   <div class="ui-grid-a">
+    <div class="ui-block-a">
+     <h2>주소</h2>
+     <p>미 뉴욕주</p>
+     <p>120</p>
+    </div>
+    <div class="ui-block-b">
+     <img alt="" src="images/map01.jpg">
+    </div>
+   </div>
+   <div>
+    <a href="https://www.google.com/maps/place/Per+Se/@40.7682218,-73.9850875,17z/data=!3m2!4b1!5s0x89c258f620dd2c59:0xca20f753fe2c35e7!4m5!3m4!1s0x89c258f62fec73a7:0x5e24118dffac8a65!8m2!3d40.7682178!4d-73.9828988?hl=ko" 
+    data-role="button" data-icon="location">구글맵에서 찾기</a>
+    <a href="tel:021234567" data-role="button" data-icon="phone">전화번호</a>
+   </div>
+   <hr>
+   <div id="notation">
+    <form>
+     <label for="select-choice">
+      <h2>사용자 평가</h2>
+     </label>
+     <!-- data-native-menu="false" : 모바일 기기에 상관없이 동일한 UI 처리 -->
+     <!-- 특수문자 이모티콘 : 자음(ㅁ)+오른쪽 Ctrl or 한자키 -->
+     <select name="select-choice" id="select-choice" 
+     data-native-menu="false" data-theme="b">
+      <option value="one">Bad ☆</option>
+      <option value="two">Good ☆☆</option>
+      <option value="htree" selected>Great ☆☆☆</option>
+      <option value="four">Excellent ☆☆☆☆</option>
+     </select>
+    </form>
+   </div>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h4>(주)맛집 02)123-4567</h4>
+		</div>
+	</div>
+</body>
+</html>

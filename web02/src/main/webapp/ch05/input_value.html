@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../include/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#button1").click(function() {
+		var name = $("#name").val();//id가 name인 태그에 입력된 값
+		alert("name");
+		name = prompt("이름을 입력하세요", "아무개");
+		$("#name").val(name);//태그의 value를 변경
+		//attribute 속성
+		//태그.attr("속성이름") : 속성 읽기 함수
+		//태그.attr("속성이름", "변경할 값") : 속성 변경 함수
+		$("#img1").attr("src", "../images/apple.png");
+		
+		//2개 이상의 속성을 바꿀 경우 {}로 묶음
+		$("#img1").attr({
+			"width" : "100px",
+			"height" : "100px"
+		});//이미지의 사이즈 변경
+		//각각 아래처럼 처리해도 된다.
+		//$("img1").attr("width", "400px");
+	 //$("img1").attr("height", "200px");
+	 var img = $("#img1").attr("src");//src 속성의 값을 읽음
+	});
+	
+});
+
+
+function check(){
+	var name=document.getElementById("name").value;
+	alert(name);
+	
+}
+
+</script>
+
+
+</head>
+<body>
+이름 : <input id="name" value=""> <br>
+<button id="text" onclick="check()">확인</button>
+
+<img id="img1" src="../images/tomato.jpg"> <br>
+<button id="button1">확인</button>
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6.Obsolete Punk Rocker</title>
+<link rel="stylesheet"
+	href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<style type="text/css">
+.player { width: 100%; }
+img {margin:0px 0px 0px 7%;}
+</style>
+
+</head>
+<body>
+
+	<div data-role="page">
+	
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>SONIC STONES</h1>
+		</div>
+		
+		<div data-role="content">
+			<div class="ui-bar ui-bar-a" style="text-align:center;">6.Obsolete Punk Rocker</div>
+			<br> 
+			<img src="../images/before_the_storm.jpg" width="400px" height="400px" text-align="center">
+			<audio id="myAudio" class="player" controls="controls" preload="metadata" autoplay="autoplay">
+				<source src="6. Obsolete Punk Rocker.mp3" type="audio/mp3">
+			</audio>
+
+			<div data-role="collapsible-set" data-theme="b"
+				data-content-theme="a">
+				<div data-role="collapsible">
+					<h3>lyrics</h3>
+					<p>HEY~DO YOU WANT A REVOLUTION?</p>
+					<p>나 한물가버린 PUNK ROCKER</p>
+					<p>멈춰버린지 오래된 뇌가 움직여</p>
+					<p>알아 이젠 네 시대인걸. 박수는 쳐줄게</p>
+					<br>
+					<br>
+					<p>OH I JUST DO IT! ALRIGHT~</p>
+					<p>세월이 흘러가도 나 여기 그대로</p>
+					<br>
+					<br>
+					<p>HEY~DO YOU WANT A REVOLUTION?</p>
+					<p>나 한물가버린 PUNK ROCKER</p>
+					<p>멈춰버린지 오래된 심장이 뛰어</p>
+					<p>알아 이젠 네 시대인걸, 박수는 쳐줄게</p>
+					<br>
+					<br>
+					<p>어둠이 익숙한 젊음의 꽃이 피어나고</p>
+					<p>굳어진 심장이 조금씩 서려와</p>
+					<p>오래된 상처가 아련한 추억으로</p>
+					<p>아무도 없었던 세월 그리움으로</p>
+					<p>어둠이 익숙한 꽃이 피어나고</p>
+					<p>굳어진 심장이 조금씩 서려와</p>
+					<p>그리움 두려움 흘러간 후회와 추억이 날 죽이려</p>
+					<br>
+					<br>
+					<p>FUCK YOU! Leave me by my side. I will make my world.</p>
+					<br>
+					<br>
+					<p>그대로 흘러가리 나 이대로 영원히</p>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" class="ui-bar" data-theme="a" style="text-align: center;">
+			<div data-role="controlgroup" data-type="horizontal" data-theme="a">
+			
+				<a id="prev" data-role="button" href="track5.html" data-rel="dialog">
+					<img src="../images/prev.png" width="25.6px" height="25.6px">
+				</a>
+				<a id="song_list" data-role="button" href="../sonicstones.html">
+					<img src="../images/list1.png" width="25.6px" height="25.6px">
+				</a> 
+				<a id="next" data-role="button" href="track7.html" data-rel="dialog">
+					<img src="../images/next.png" width="25.6px" height="25.6px">
+				</a>
+			</div>
+		</div>
+	</div>
+		
+	
+	<script>
+	
+    var audio = document.getElementById("myAudio");
+   
+	//prev 버튼 클릭시 음악 멈추면서 이전곡으로 이동
+	$("#prev").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+	
+	//next 버튼 클릭시 음악 멈추면서 다음곡으로 이동
+	$("#next").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+
+	</script>
+
+
+</body>
+</html>

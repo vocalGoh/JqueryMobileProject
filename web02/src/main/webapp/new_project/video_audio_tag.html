@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>비디오 태그와 오디오 태그</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+<!-- audio와 video 설정 -->
+<audio src="music/1. Screaming_Beaver.mp3" id="myAudio" preload="metadata" control></audio>
+<br />
+
+<!-- audio와 video의 재생, 스톱 설정을 button으로 설정한다. -->
+<button id="audioPlay">음악 재생</button><button id="audioStop">음악 스톱</button><br />
+
+<!-- 재생 상태 -->
+<p>음악 로드 - <span id="audioProgress">0 / 0</span></p>
+<video src="http://techslides.com/demos/sample-videos/small.mp4" id="myVideo" preload></video>
+<br />
+<button id="videoPlay">동영상 재생</button><button id="videoStop">동영상 스톱</button><br />
+<!-- 재생 상태 -->
+<p>동영상 로드 - <span id="videoProgress">0 / 0</span></p>
+
+
+<script>
+// audio와 video 오브젝트를 취득함.
+var audio = document.getElementById("myAudio");
+var video = document.getElementById("myVideo");
+//음악 재생 클릭
+$("#audioPlay").on("click", function() {
+// 음악 재생
+audio.play();
+// 동영상 스톱
+video.pause();
+});
+//음악 스톱 클릭
+$("#audioStop").on("click", function() {
+// 음악 스톱
+audio.pause();
+});
+//동영상 재생 클릭
+$("#videoPlay").on("click", function() {
+// 동영상 재생
+video.play();
+// 음악 스톱
+audio.pause();
+});
+//동영상 스톱 클릭
+$("#videoStop").on("click", function() {
+// 동영상 스톱
+video.pause();
+});
+// 음악 재생 시간이 바뀌면 호출되는 이벤트
+audio.addEventListener('timeupdate', function(e){
+// 현재 재생 시간 (초 단위 절삭)
+var playtime = Math.floor(audio.currentTime);
+// 전체 재생 시간 (초 단위 절삭)
+var total = Math.floor(audio.duration);
+// 상태 표시
+$("#audioProgress").html(playtime + " / " + total);
+}, false);
+// 동영상 재생 시간이 바뀌면 호출되는 이벤트
+video.addEventListener('timeupdate', function(e){
+// 현재 재생 시간 (초 단위 절삭)
+var playtime = Math.floor(video.currentTime);
+// 전체 재생 시간 (초 단위 절삭)
+var total = Math.floor(video.duration);
+// 상태 표시
+$("#videoProgress").html(playtime + " / " + total);
+}, false);
+</script>
+</body>
+</html>

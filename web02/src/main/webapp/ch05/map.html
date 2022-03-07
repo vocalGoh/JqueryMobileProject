@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../include/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+var arrName = ["갑","을","병","정"];//core javascript의 지역변수
+$(function(){
+	//자바스크립트의 map() : 기본적으로 배열로 처리됨
+	//자바와 반대로 key, value가 아닌 value, key로 값이 처리됨
+	var arr = arrName.map(function(value, key) {//jQuery의 지역변수
+		console.log("value : " +value + ",key" + key);
+		return value;
+	});
+	console.log(arr); //F12 콘솔상에서 확인
+});
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

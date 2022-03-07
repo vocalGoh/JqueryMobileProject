@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5.DELPHINIUM (Before The Storm Ver.)</title>
+<link rel="stylesheet"
+	href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<style type="text/css">
+.player { width: 100%; }
+img {margin:0px 0px 0px 7%;}
+</style>
+
+</head>
+<body>
+
+	<div data-role="page">
+	
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>SONIC STONES</h1>
+		</div>
+		
+		<div data-role="content">
+			<div class="ui-bar ui-bar-a" style="text-align:center;">5.DELPHINIUM (Before The Storm Ver.)</div>
+			<br> 
+			<img src="../images/before_the_storm.jpg" width="400px" height="400px" text-align="center">
+			<audio id="myAudio" class="player" controls="controls" preload="metadata" autoplay="autoplay">
+				<source src="5. DELPHINIUM (Before The Storm Ver.).mp3" type="audio/mp3">
+			</audio>
+
+			<div data-role="collapsible-set" data-theme="b"
+				data-content-theme="a">
+				<div data-role="collapsible">
+					<h3>lyrics</h3>
+					<p>시원한 바람이 불어와</p>
+					<p>끝도 보이지 않는 밤에</p>
+					<p>어디라도 갈 수 있다고 믿었던</p>
+					<p>나 아침까지 노래해</p>
+					<p>너에게 가길</p>
+					<br>
+					<br>
+					<p>꽃잎이 물드는 이 계절</p>
+					<p>너 좋아하던 이 풍경을</p>
+					<p>지금 나홀로 걷고 있네요</p>
+					<p>물감이 더 말라버리기전에</p>
+					<p>익숙하지 않은 밤길을</p>
+					<p>훌쩍 걸어보고 싶어져</p>
+					<p>혹시 너와 마주칠수 있을까</p>
+					<p>소원빌며 어둠 속으로 가요</p>
+					<br>
+					<br>
+					<p>하늘색이 짙어지고 바람향기가</p>
+					<p>변해버리기 전에 말할래요</p>
+					<p>희망의 빛 따위는 없어도 내일이 밝지 않더라도</p>
+					<p>나 너와 함께 하고 싶다고</p>
+					<br>
+					<br>
+					<p>꿈에서 조차 웃지 않던</p>
+					<p>너를 지금 만나러가요</p>
+					<p>처음에도 마지막에도</p>
+					<p>소원을 빌며 다시 새겨봐요</p>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" class="ui-bar" data-theme="a" style="text-align: center;">
+			<div data-role="controlgroup" data-type="horizontal" data-theme="a">
+			
+				<a id="prev" data-role="button" href="track4.html" data-rel="dialog">
+					<img src="../images/prev.png" width="25.6px" height="25.6px">
+				</a>
+				<a id="song_list" data-role="button" href="../sonicstones.html">
+					<img src="../images/list1.png" width="25.6px" height="25.6px">
+				</a> 
+				<a id="next" data-role="button" href="track6.html" data-rel="dialog">
+					<img src="../images/next.png" width="25.6px" height="25.6px">
+				</a>
+			</div>
+		</div>
+	</div>
+		
+	
+	<script>
+	
+    var audio = document.getElementById("myAudio");
+   
+	//prev 버튼 클릭시 음악 멈추면서 이전곡으로 이동
+	$("#prev").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+	
+	//next 버튼 클릭시 음악 멈추면서 다음곡으로 이동
+	$("#next").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7.Jet lag</title>
+<link rel="stylesheet"
+	href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<style type="text/css">
+.player { width: 100%; }
+img {margin:0px 0px 0px 7%;}
+</style>
+
+</head>
+<body>
+
+	<div data-role="page">
+	
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>SONIC STONES</h1>
+		</div>
+		
+		<div data-role="content">
+			<div class="ui-bar ui-bar-a" style="text-align:center;">7.Jet lag</div>
+			<br> 
+			<img src="../images/before_the_storm.jpg" width="400px" height="400px" text-align="center">
+			<audio id="myAudio" class="player" controls="controls" preload="metadata" autoplay="autoplay">
+				<source src="7. Jet lag.mp3" type="audio/mp3">
+			</audio>
+
+			<div data-role="collapsible-set" data-theme="b"
+				data-content-theme="a">
+				<div data-role="collapsible">
+					<h3>lyrics</h3>
+					<p>내가 웃을때에는 너는 울고 있고</p>
+					<p>내가 행복할때엔 너는 힘들어해</p>
+					<p>Oh baby baby baby baby</p>
+					<p>나 기쁠때 너는 슬퍼해</p>
+					<p>잠시 맞닿은 순간</p>
+					<br>
+					<br>
+					<p>내 컨디션 좋을 때엔 너는 아파하고</p>
+					<p>내가 배부를 때엔 너는 배고파해</p>
+					<p>Oh baby baby baby baby</p>
+					<p>내가 사랑할때엔 넌 OH NO.. 넌 떠났네</p>
+					<br>
+					<br>
+					<p>내가 환할땐 넌 어둠속에서</p>
+					<p>실처럼 가늘게 늘어진 한줄기 빛</p>
+					<p>외로워 바람에 몸을 맡겨요</p>
+					<p>지금 그대로 너에게 닿을 수 있길</p>
+					<p>너에게</p>
+					<br>
+					<br>
+					<p>여긴 새벽공기가 오~ 정말 좋은데</p>
+					<p>거긴 미세먼지가 밤의 안개 위험해</p>
+					<p>오 달링달링달링달링</p>
+					<p>나는 이제 너무 졸려요 I'm Sorry</p>
+					<br>
+					<br>
+					<p>내가 환할땐 넌 어둠속에서</p>
+					<p>지금 그대로 나 어둠속으로</p>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" class="ui-bar" data-theme="a" style="text-align: center;">
+			<div data-role="controlgroup" data-type="horizontal" data-theme="a">
+			
+				<a id="prev" data-role="button" href="track6.html" data-rel="dialog">
+					<img src="../images/prev.png" width="25.6px" height="25.6px">
+				</a>
+				<a id="song_list" data-role="button" href="../sonicstones.html">
+					<img src="../images/list1.png" width="25.6px" height="25.6px">
+				</a> 
+				<a id="next" data-role="button" href="track8.html" data-rel="dialog">
+					<img src="../images/next.png" width="25.6px" height="25.6px">
+				</a>
+			</div>
+		</div>
+	</div>
+		
+	
+	<script>
+	
+    var audio = document.getElementById("myAudio");
+   
+	//prev 버튼 클릭시 음악 멈추면서 이전곡으로 이동
+	$("#prev").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+	
+	//next 버튼 클릭시 음악 멈추면서 다음곡으로 이동
+	$("#next").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+	
+	
+	</script>
+
+
+</body>
+</html>

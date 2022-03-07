@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<canvas id="myCanvas" width="300" height="200"></canvas>
+<script type="text/javascript">
+var canvas=document.getElementById("myCanvas");
+var context=canvas.getContext("2d");
+
+context.arc(70, 50, 10, 0, 2.0*Math.PI, false);//안쪽 원
+context.arc(80, 60, 120, 0, 2.0*Math.PI, false);//바깥쪽 원
+context.stroke();
+
+//createRedialGradient(x1,y1,r1,x2,y2,r2) 
+//원형 그라디언트 효과로서 안원에서 바깥쪽 원으로 퍼져나감
+var gradient=context.createRadialGradient(70,50,10,80,60,120);
+gradient.addColorStop(0, "white");//시작
+gradient.addColorStop(1, "red");//끝
+context.fillStyle=gradient;
+context.fillRect(0, 0, 200, 200);//사각형에 arc적용
+
+
+</script>
+</body>
+</html>

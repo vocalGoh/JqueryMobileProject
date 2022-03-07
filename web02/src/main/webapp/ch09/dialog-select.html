@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dialog-select</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1>머리말(header)영역</h1>
+		</div>
+		<div data-role="content">
+    <div data-role="fieldcontain">
+     <label for="age1">정보습득매체</label>
+     <!-- data-native-menu="false" : 선택매뉴가 대화상자와 비슷한 모양으로 표시 
+     multiple 속성값은 항목을 동시에 여러개를 선택 가능하게 한다.-->
+     <select name="age1" id="age1" data-native-menu="false" 
+     multiple="multiple">
+      <option>선택하세요(복수선택가능)</option>
+      <option value="num1">신문</option>
+      <option value="num2">인터넷</option>
+      <option value="num3">SNS</option>
+      <option value="num4">지인소개</option>
+      <option value="num5">방송</option>
+     </select>
+     <label for="outlink">외부링크</label>
+     <ul data-role="listview" id="outlink" data-inset="true">
+      <li><a href="mailto:abc@abc.com">이메일 링크</a> </li>
+      <li><a href="https://www.google.com/maps/place/%EC%84%B1%EB%8F%99%EC%9A%B0%EC%B2%B4%EA%B5%AD/@37.56085,127.02596,15z/data=!3m1!4b1!4m5!3m4!1s0x357ca35960102233:0x7a12165c02d12360!8m2!3d37.5608503!4d127.0346933?hl=ko" target="_blank">미래능력개발 위성좌표 링크</a></li>
+     </ul>
+    </div>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h4>꼬리말(footer)영역</h4>
+		</div>
+	</div>
+</body>
+</html>

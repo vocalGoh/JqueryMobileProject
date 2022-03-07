@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function check(){
+	var userid=document.form1.userid.value;
+	var pwd=document.form1.pwd.value;
+	if(userid==""){
+		alert("아이디를 입력하세요.");
+		document.form1.userid.focus();
+		return;
+	}
+	if(pwd==""){
+		alert("비밀번호를 입력하세요.");
+		document.form1.pwd.focus();
+		return;
+	}
+	document.form1.submit();
+	
+}
+
+
+</script>
+
+
+</head>
+<body>
+<h2>로그인하세요.</h2>
+<form name="form1" method="post" action="login.jsp">
+<table>
+ <tr>
+  <td>아이디</td>
+  <td><input type="text" name="userid"> </td>
+ </tr>
+ <tr>
+  <td>비밀번호</td>
+  <td><input type="password" name="pwd"> </td> 
+ </tr>
+ <tr>
+  <td colspan="2">
+   <input type="button" value="로그인" onclick="check()">
+  </td>
+ </tr>
+</table>
+
+</form>
+
+</body>
+</html>

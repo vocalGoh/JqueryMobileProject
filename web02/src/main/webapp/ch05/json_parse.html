@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../include/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	//getJSON("json데이터", 콜백함수)
+	//콜백함수 : function(json객체배열, 처리상태)
+	$.getJSON("student.json", function(data, textStatus){
+		console.log("data : " + data);
+		console.log("textStatus : " + textStatus);
+		//테이블에 자식노드추가 append()함수 활용
+		$("#students").append("<tr><td>번호</td><td>이름</td><td>전화</td></tr>");
+		//each() : java의 확장 for문과 비슷
+		$.each(data, function() {
+			$("#students").append("<tr><td>"+ this.num + 
+					"</td><td>" + this.name + "</td><td>" + this.tel + "</td></tr>");
+		});
+	});
+});
+
+
+</script>
+
+</head>
+<body>
+<!-- json 데이터를 파싱(일련의 문자열을 의미있는 토큰으로 분해)해서 테이블로 출력 -->
+ <table id="students" style="width: 500px;">
+ </table>
+</body>
+</html>

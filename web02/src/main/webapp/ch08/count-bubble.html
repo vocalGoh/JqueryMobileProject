@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1>머리말(header)영역</h1>
+		</div>
+		<div data-role="content">
+			<p>내용(content)영역</p>
+   <ul data-role="listview" data-inset="true" data-count-theme="a">
+   <!-- 카운트버블 효과를 내기위해서는 span태그내 class="ui-li-count" 속성을 적용  -->
+    <li><a href="#">리스트1</a><span class="ui-li-count">5</span></li>
+    <li><a href="#">리스트2</a><span class="ui-li-count">17</span></li>
+    <li><a href="#">리스트3</a><span class="ui-li-count">hot</span></li>
+    <li><a href="#">리스트4</a><span class="ui-li-count">new</span></li>
+   </ul>   
+      
+		</div>
+		<div data-role="footer">
+			<h4>꼬리말(footer)영역</h4>
+		</div>
+	</div>
+</body>
+</html>

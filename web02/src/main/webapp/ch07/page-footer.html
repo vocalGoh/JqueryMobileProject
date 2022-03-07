@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="stylesheet"
+  href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script
+  src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+  <div data-role="page" id="page1">
+    <div data-role="header" data-add-back-btn="true">
+      <a href="#page2" class="ui-btn-right">페이지2</a>
+      <h1>머리말(header)영역</h1>
+    </div>
+    <div data-role="content">
+      <p>내용(content)영역</p>
+      <h1>첫번째 페이지</h1>
+    </div>
+    <!--  class="ui-btn" : footer안의 버튼요소를 가운데 정렬시킨다. -->
+    <div data-role="footer" class="ui-btn">
+      <a href="#page1">페이지1</a> <a href="#page2">페이지2</a>
+    </div>
+  </div>
+
+  <div data-role="page" id="page2">
+    <div data-role="header" data-add-back-btn="true"
+      data-back-btn-text="이전으로">
+      <a href="#page2" class="ui-btn-right">페이지2</a>
+      <h1>머리말(header)영역</h1>
+    </div>
+    <div data-role="content">
+      <p>내용(content)영역</p>
+      <h1>두번째 페이지</h1>
+    </div>
+    <!-- footer영역안 data-role="controlgroup"을 쓴 버튼들을 가운데 정렬을 하려면
+    style="text-align: center;" 처리한다. -->
+    <div data-role="footer" class="ui-bar" style="text-align: center;">
+      <div data-role="controlgroup" data-type="horizontal">
+        <a href="#page1">페이지1</a> <a href="#page2">페이지2</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>thumbnail-listview.html</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1>머리말(header)영역</h1>
+		</div>
+		<div data-role="content">
+			<p>내용(content)영역</p>
+   <ul data-role="listview">
+    <!-- 썸네일 이미지를 리스트뷰에 적용가능한데 항목왼쪽에 추가된다.  -->
+    <li><a href="#"><img src="../images/listimg.png">리스트1</a></li>
+    <li><a href="#"><img src="../images/listimg.png">리스트2</a></li>
+    <li><a href="#"><img src="../images/listimg.png">리스트3</a></li>
+    <li><a href="#"><img src="../images/listimg.png">리스트4</a></li>
+   </ul>   
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h4>꼬리말(footer)영역</h4>
+		</div>
+	</div>
+</body>
+</html>

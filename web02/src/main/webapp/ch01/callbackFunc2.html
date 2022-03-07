@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function greeting(name){
+	alert('반갑습니다. '+name);//4.실행
+}
+
+function processInput(call){
+	alert(call);
+	var name=prompt("이름을 입력해 주세요.", "");//2.실행
+	call(name);//3.call변수는 greeting(name){..}을
+	//기억하고 있기 때문에 파라미터로 name값을 가지고
+	//greeting(name){..}을 호출한다.
+}
+
+//콜백함수는 함수로써 다른 함수에 전달되며, 이는 외부 함수내에서
+//일종의 루틴 또는 동작을 완성하기 위해 호출되며 비동기적으로 실행된다.
+
+
+processInput(greeting);
+//processInput(함수이름) 1.호출
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

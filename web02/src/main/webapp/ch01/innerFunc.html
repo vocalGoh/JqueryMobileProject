@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function outerFunction(){
+	var a=10;
+	var b=20;
+	
+	function innerFunction(){
+		var b=30;
+		var c=40;
+		alert(a);
+		alert(b);//내부함수의 멤버가 우선시 됨
+		alert(c);
+	}
+	innerFunction();
+	//내부함수를 호출할때는 외부함수와 내부함수 사이에서 호출
+	alert('outerFunction입니다.');
+}
+
+outerFunction();
+//innerFunction();//내부함수를 바로 밖에서 호출할 수는 없다.
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

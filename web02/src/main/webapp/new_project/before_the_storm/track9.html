@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>9.Find Out</title>
+<link rel="stylesheet"
+	href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<style type="text/css">
+.player { width: 100%; }
+img {margin:0px 0px 0px 7%;}
+</style>
+
+</head>
+<body>
+
+	<div data-role="page">
+	
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>SONIC STONES</h1>
+		</div>
+		
+		<div data-role="content">
+			<div class="ui-bar ui-bar-a" style="text-align:center;">9.Find Out</div>
+			<br> 
+			<img src="../images/before_the_storm.jpg" width="400px" height="400px" text-align="center">
+			<audio id="myAudio" class="player" controls="controls" preload="metadata" autoplay="autoplay">
+				<source src="9. Find Out.mp3" type="audio/mp3">
+			</audio>
+
+			<div data-role="collapsible-set" data-theme="b"
+				data-content-theme="a">
+				<div data-role="collapsible">
+					<h3>lyrics</h3>
+					<p>더이상 나 일어날 수 없다고</p>
+					<p>서늘한 막다른 길 앞에서</p>
+					<p>홀로 바람 막으려</p>
+					<p>고개를 들 수 없을때 날 부르던 누군가</p>
+					<br>
+					<br>
+					<p>이제 난 아무것도 할 수 없다고</p>
+					<p>적막한 고요속에 사무쳐</p>
+					<p>밝아오는 햇살은</p>
+					<p>내 하늘이 아니란걸 알았을때 넌 다가와</p>
+					<br>
+					<br>
+					<p>말했어. 세상은 네게 대답하지 않는다고.</p>
+					<p>일어나보라고</p>
+					<br>
+					<br>
+					<p>Because I love you</p>
+					<p>나 다시 일어나 지워진 꿈으로</p>
+					<br>
+					<br>
+					<p>멀리서 고장난 시계소리가 날 깨워</p>					
+					<p>속삭이듯 말하네</p>
+					<p>빨리 지나갈거라고</p>
+					<p>깊은 상처 아물어 짙은 주름 하나둘씩</p>
+					<br>
+					<br>
+					<p>이제 나 다시 웃을 수 있다고</p>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" class="ui-bar" data-theme="a" style="text-align: center;">
+			<div data-role="controlgroup" data-type="horizontal" data-theme="a">
+			
+				<a id="prev" data-role="button" href="track8.html" data-rel="dialog">
+					<img src="../images/prev.png" width="25.6px" height="25.6px">
+				</a>
+				<a id="song_list" data-role="button" href="../sonicstones.html">
+					<img src="../images/list1.png" width="25.6px" height="25.6px">
+				</a> 
+				<a id="next" data-role="button" href="track10.html" data-rel="dialog">
+					<img src="../images/next.png" width="25.6px" height="25.6px">
+				</a>
+			</div>
+		</div>
+	</div>
+		
+	
+	<script>
+	
+    var audio = document.getElementById("myAudio");
+   
+	//prev 버튼 클릭시 음악 멈추면서 이전곡으로 이동
+	$("#prev").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+	
+	//next 버튼 클릭시 음악 멈추면서 다음곡으로 이동
+	$("#next").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+
+	</script>
+
+
+</body>
+</html>

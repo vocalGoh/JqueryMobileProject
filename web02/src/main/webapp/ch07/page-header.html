@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id="page1">
+		<div data-role="header">
+			<h1>머리말(header)영역</h1>
+   <a href="#page2" class="ui-btn-right">페이지2</a>
+		</div>
+		<div data-role="content">
+			<p>내용(content)영역</p>
+   <h1>첫번째 페이지</h1>
+		</div>
+		<div data-role="footer">
+			<h4>꼬리말(footer)영역</h4>
+		</div>
+	</div>
+  
+  
+ <div data-role="page" id="page2">
+    <div data-role="header">
+      <a href="#page3" class="ui-btn-right">페이지3</a>
+      <h1>머리말(header)영역</h1>
+      <a href="#page1" class="ui-btn-left">페이지1</a>
+    </div>
+    <div data-role="content">
+      <p>내용(content)영역</p>
+      <h1>두번째 페이지</h1>
+    </div>
+    <div data-role="footer">
+      <h4>꼬리말(footer)영역</h4>
+    </div>
+  </div> 
+  
+  <div data-role="page" id="page3">
+    <div data-role="header">
+      <a href="#page1">홈</a>
+      <h1>머리말(header)영역</h1>
+    </div>
+    <div data-role="content">
+      <p>내용(content)영역</p>
+      <h1>세번째 페이지</h1>
+    </div>
+    <div data-role="footer">
+      <h4>꼬리말(footer)영역</h4>
+    </div>
+  </div> 
+  
+  
+</body>
+</html>

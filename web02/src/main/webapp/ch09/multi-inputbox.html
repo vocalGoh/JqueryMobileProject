@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>multi-inputbox</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1>입력양식</h1>
+		</div>
+		<div data-role="content">
+    아이디 : <input type="text">
+    비밀번호 : <input type="password">
+    나이 : <input type="number" placeholder="숫자를 입력하세요.">
+    점수 : <input type="range" value="50" min="0" max="100">
+    이메일 : <input type="email" placeholder="abc@abc.com">
+    전화번호 : <input type="tel" placeholder="010-0000-0000">
+    날짜 : <input type="date">
+    url : <input type="url" placeholder="www.aaaa.com">
+    검색 : <input type="search" placeholder="검색할 키워드를 입력하세요.">
+    자기소개 : <textarea rows="5" cols="25" placeholder="자기소개를 간략히 하세요~~" ></textarea>
+		</div>
+		<div data-role="footer">
+			<h4>꼬리말(footer)영역</h4>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+ var intervalid = setInterval(function() {
+	document.write("1초간격");
+}, 1000); 
+
+//setTimeout()함수에서 clearInterval()함수를 사용해서 1초
+//간격으로 출력하는 타이머를 5초 후에 멈추게 함.
+ setTimeout(function() {
+	clearInterval(intervalid);
+}, 5000);
+ 
+
+/*  function test1(string) {
+	  document.write("test1 : " + string);
+	}
+
+	function test2(string) {
+		document.write("test2 : " + string);
+	}
+
+	setInterval(function() {
+	  test1("Hello!");
+	  test2("World!");
+	}, 3000); */
+ 
+ 
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

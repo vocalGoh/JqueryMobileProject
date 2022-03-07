@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hidden-panel</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+  <!-- panel : 왼쪽, 오른쪽에서 팝업메뉴처럼 패널화면이 나옴
+       data-display="overlay" : page위에 panel이 표시
+                    "reveal" : page밑에 panel이 표시
+                    "push" : page옆에 panel이 표시 
+   -->
+  <div data-role="panel" id="panel1" data-display="overlay" 
+  data-theme="b">
+   <form>
+    <h1>로그인 패널</h1>
+    <label for="name">사용자명 : </label>
+    <!-- data-mini="true" : 작은 버튼 처리 
+    data-clear-btn="true" : 텍스트입력필드에서 맨우측에 입력된텍스트를 
+    지우는 기능의 [x]버튼을 생성-->
+    <input name="name" id="name" type="text" value="" 
+    data-mini="true" data-clear-btn="true">
+    <label for="password">비밀번호 : </label>
+    <input name="password" id="password" type="password" value="" 
+    data-mini="true" data-clear-btn="true">
+    <!-- class="ui-grid-a" : 2단으로 그리드를 생성 -->
+    <div class="ui-grid-a">
+     <div class="ui-block-a">
+      <!-- data-rel="close" : 패널을 닫는 기능 부여 -->
+      <a href="#" data-role="button" data-rel="close">취소</a>
+     </div>
+     <div class="ui-block-b">
+      <!-- data-rel="close" : 패널을 닫는 기능 부여 -->
+      <a href="#" data-role="button" data-rel="close">저장</a>
+     </div>
+    </div>
+   </form>
+  </div>
+  
+  <div data-role="panel" id="panel2" data-display="overlay">
+   <ul data-role="listview">
+    <li><a href="#" data-rel="close">메뉴 패널 종료</a></li>
+    <li><a href="#">메뉴1</a></li>
+    <li><a href="#">메뉴2</a></li>
+    <li><a href="#">메뉴3</a></li>
+    <li><a href="#">메뉴4</a></li>
+   </ul>
+  </div>
+  
+  <!-- data-position="right" : 오른쪽에서 패널이 나옴 -->
+  <div data-role="panel" id="panel3" data-display="overlay" 
+  data-position="right">
+   <h3>패널 메모</h3>
+   <p>오른쪽 메모 패널 영역입니다.</p>
+   <a href="#page1" data-role="button" data-rel="close" >패널 종료</a>
+  </div>
+  
+		<div data-role="header">
+			<h1>머리말(header)영역</h1>
+		</div>
+		<div data-role="content">
+    <!-- data-inline="true" : 버튼의 크기를 text크기에 자동으로 맞춤 -->
+   <a href="#panel1" data-role="button" data-inline="true">로그인 패널</a>
+   <a href="#panel2" data-role="button" data-inline="true">메뉴 패널</a>
+   <a href="#panel3" data-role="button" data-inline="true">메모 패널</a> 
+
+		</div>
+		<div data-role="footer">
+			<h4>꼬리말(footer)영역</h4>
+		</div>
+	</div>
+</body>
+</html>

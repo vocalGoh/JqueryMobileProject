@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>익명함수</title>
+<script type="text/javascript">
+var plusTen = function(){//익명함수
+	var num1 = prompt("숫자를 입력해 주세요.", "");
+	alert(Number(num1)+10); 
+};
+
+alert(typeof(plusTen));
+alert(plusTen);
+
+plusTen();//변수를 통해 익명함수를 호출
+
+var add=plusTen;//변수 add에 익명함수 저장
+add();//변수를 통해 익명함수호출
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

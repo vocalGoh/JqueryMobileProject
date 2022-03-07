@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dialog</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id="page1" data-position="fixed">
+		<div data-role="header">
+			<h1>머리말(header)영역</h1>
+		</div>
+		<div data-role="content">
+			<p>내용(content)영역</p>
+      <!-- data-rel="dialog":링크페이지의 유형을 대화상자로 선언 -->
+   <a href="#dialog1" data-role="button" 
+   data-rel="dialog">대화상자형 페이지1</a> 
+   <a href="#dialog2" data-role="button">대화상자형 페이지2</a>  
+		</div>
+		<div data-role="footer">
+			<h4>꼬리말(footer)영역</h4>
+		</div>
+	</div>
+  
+ <div data-role="page" id="dialog1" data-position="fixed">
+    <div data-role="header">
+      <h1>dialog1</h1>
+    </div>
+    <div data-role="content">
+      <p>대화상자형 페이지1</p>
+      <!-- data-rel="dialog":링크페이지의 유형을 대화상자로 선언 -->
+   <a href="#page1" data-role="button">기본 페이지1</a> 
+   <a href="#dialog2" data-role="button">대화상자형 페이지2</a>  
+    </div>
+
+  </div> 
+  
+  <div data-role="dialog" id="dialog2" data-position="fixed">
+    <div data-role="header">
+      <h1>dialog2</h1>
+    </div>
+    <div data-role="content">
+      <p>대화상자형 페이지2</p>
+      <!-- data-rel="dialog":링크페이지의 유형을 대화상자로 선언 -->
+   <a href="#page1" data-role="button">기본 페이지1</a> 
+   <a href="#dialog2" data-role="button">대화상자형 페이지2</a>  
+    </div>
+
+  </div>
+  
+</body>
+</html>

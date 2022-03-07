@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>basic-panel</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1>머리말(header)영역</h1>
+		</div>
+		<div data-role="content">
+    <!-- collapsible : 첫번째 h태그가 제목으로 표시되며 h태그가 하나 이상 있어야 한다.  -->
+    <div data-role="collapsible">
+     <h3>접이식 패널제목</h3>
+     <p>패널 내용</p>
+    </div>
+    <div data-role="collapsible">
+     <h3>접이식 패널제목</h3>
+     <h6>일반 제목</h6>
+     <p>패널 내용</p>
+    </div>
+		</div>
+		<div data-role="footer">
+			<h4>꼬리말(footer)영역</h4>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+<ul>
+ <li>아이템1</li>
+ <li>아이템2</li>
+ <li>아이템3</li>
+</ul>
+
+<ul>
+ <li>아이템4</li>
+ <li>아이템5</li>
+ <li>아이템6</li>
+</ul>
+
+<!-- 본 예제는 자바스크립트를 head로 옮기면 잘 작동 안한다. -->
+<script type="text/javascript">
+//getElementsByTagName("태그이름"), 지금은 JQuery로 대체중임
+//[1]두번째 ul태그를 가리킴(배열처리하는것임)
+var list = document.getElementsByTagName("ul")[1];
+//allItems 변수는 두번째 ul태그의 li태그 배열을 가리킴
+var allItems = list.getElementsByTagName("li");
+
+for(i=0; i<allItems.length; i++){
+  //firstChild 첫번째 요소의 데이터, 즉 <li>아이템4</li>를 가리킴
+  alert(allItems[i].firstChild.data);
+}
+</script>
+
+</body>
+</html>

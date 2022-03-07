@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function add(){
+	var output='';
+	var sum=0;
+	
+	for(var i=0; i<arguments.length; i++){//입력된 매개변수의 갯수만큼 반복
+		output += arguments[i]+' ';//arguments배열에 저장된 배열요소값을 output에 저장
+		sum += arguments[i]; //sum에 값들을 더함
+	}
+	output='입력된 매개변수 '+output+'을 더한 값은\n'+sum+'입니다.';
+	return output;
+}
+
+var out=add(1,2,3,4,5,6,7);//arguments 배열에 저장됨
+alert(out);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

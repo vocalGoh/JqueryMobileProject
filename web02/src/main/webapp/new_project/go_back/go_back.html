@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1.Go Back</title>
+<link rel="stylesheet"
+	href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<style type="text/css">
+.player { width: 100%; }
+img {margin:0px 0px 0px 7%;}
+</style>
+
+</head>
+<body>
+
+	<div data-role="page">
+	
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>SONIC STONES</h1>
+		</div>
+		
+		<div data-role="content">
+			<div class="ui-bar ui-bar-a" style="text-align:center;">1.Go Back</div>
+			<br> 
+			<img src="../images/go_back.png" width="400px" height="400px" text-align="center">
+			<audio id="myAudio" class="player" controls="controls" preload="metadata" autoplay="autoplay">
+				<source src="Go Back.mp3" type="audio/mp3">
+			</audio>
+
+			<div data-role="collapsible-set" data-theme="b"
+				data-content-theme="a">
+				<div data-role="collapsible">
+					<h3>lyrics</h3>
+					<p>되돌아 가나요</p>
+					<p>너무 멀리도 왔네요</p>
+					<p>이제는 힘든가요</p>
+					<p>작별인사는 괜찮아</p>
+					<p>어느새 메마른</p>
+					<p>낙엽 위를 거닐때면</p>
+					<p>부서진 마음의 조각이</p>
+					<p>다시한번 날 찾아요</p>
+					<p>아프게</p>
+					<p>이제는 알아요</p>
+					<p>이제는 끝이라는걸</p>
+					<p>돌이킬 수 없단걸</p>
+					<p>돌아갈수도 없단걸</p>
+					<p>남은건 기억뿐</p>
+					<p>근데 술로 매일 사라져</p>
+					<p>힘들었다는 지난날</p>
+					<p>미소안에 간직해요</p>
+					<p>그래요</p>
+					<p>밤 하늘에 거친 비 올때면</p>
+					<p>보이지 않아도 흐릿한 너에게</p>
+					<p>한참을 뛰어가</p>
+					<p>괜찮단 말 한마디라도</p>
+					<p>아프지 않다는 그 말 한마디면</p>
+					<p>젖은 낙엽 주워 되돌아가</p>
+					<p>되돌아 가나요</p>
+					<p>낙엽 위를 거닐때면</p>
+					<p>부서진 기억의 조각이</p>
+					<p>다시한번 날 찾는데</p>
+					<p>기억이 없어요</p>
+					<p>삶이란 그런건가요</p>
+					<p>힘들었다는 지난날</p>
+					<p>미소안에 간직해요</p>
+					<p>영원히</p>
+					<p>밤 하늘에 거친 비 올때면</p>
+					<p>보이지 않아도 흐릿한 너에게</p>
+					<p>한참을 뛰어가</p>
+					<p>괜찮단 말 한마디라도</p>
+					<p>아프지 않다는 그 말 한마디면</p>
+					<p>젖은 낙엽 주워 되돌아가</p>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" class="ui-bar" data-theme="a" style="text-align: center;">
+			<div data-role="controlgroup" data-type="horizontal" data-theme="a">
+			
+				<a id="prev" data-role="button" href="go_back.html" data-rel="dialog">
+					<img src="../images/prev.png" width="25.6px" height="25.6px">
+				</a>
+				<a id="song_list" data-role="button" href="../sonicstones.html">
+					<img src="../images/list1.png" width="25.6px" height="25.6px">
+				</a> 
+				<a id="next" data-role="button" href="go_back.html" data-rel="dialog">
+					<img src="../images/next.png" width="25.6px" height="25.6px">
+				</a>
+			</div>
+		</div>
+	</div>
+		
+	
+	<script>
+	
+    var audio = document.getElementById("myAudio");
+   
+	//prev 버튼 클릭시 음악 멈추면서 이전곡으로 이동
+	$("#prev").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+	
+	//next 버튼 클릭시 음악 멈추면서 다음곡으로 이동
+	$("#next").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+
+	</script>
+
+
+</body>
+</html>

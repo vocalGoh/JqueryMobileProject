@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1.Answer</title>
+<link rel="stylesheet"
+	href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<style type="text/css">
+.player { width: 100%; }
+img {margin:0px 0px 0px 7%;}
+</style>
+
+</head>
+<body>
+
+	<div data-role="page">
+	
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>SONIC STONES</h1>
+		</div>
+		
+		<div data-role="content">
+			<div class="ui-bar ui-bar-a" style="text-align:center;">1.Answer</div>
+			<br> 
+			<img src="../images/born.png" width="400px" height="400px" text-align="center">
+			<audio id="myAudio" class="player" controls="controls" preload="metadata" autoplay="autoplay">
+				<source src="Answer.mp3" type="audio/mp3">
+			</audio>
+
+			<div data-role="collapsible-set" data-theme="b"
+				data-content-theme="a">
+				<div data-role="collapsible">
+					<h3>lyrics</h3>
+					<p>눈부신 햇살 산들바람</p>
+					<p>심어 논 나무 그늘 아래</p>
+					<p>살며시 누워 눈을 감고</p>
+					<p>빛의 세계로 떠나</p>
+					<br>
+					<br>
+					<p>힘겨웠던 나 옛 이야기</p>
+					<p>굳어버린 내 심장 속이</p>
+					<p>아쉽긴 하지만 이대로 갈래</p>
+					<br>
+					<br>
+					<p>Oh i believe</p>
+					<p>진흙탕 속 나의 길</p>
+					<p>Oh i believe</p>
+					<p>흘렸던 내 땀아</p>
+					<p>Oh i believe</p>
+					<p>흘린 만큼 나 딱 기억해</p>
+					<p>새 옷을 입고 다시 달려가</p>
+					<br>
+					<br>
+					<p>보이지 않던 순간순간</p>
+					<p>그리움 속에 두려움이</p>
+					<p>무너져내려 무서워</p>
+					<p>널 불렀지만 대답 없어</p>
+					<br>
+					<br>
+					<p>여긴 어딘가 또 난 누군가</p>
+					<p>두려워하던 나 가슴에 묻고</p>
+					<p>아무렇지 않은 척 걸어가네</p>
+					<br>
+					<br>
+					<p>Oh i believe</p>
+					<p>진흙탕 속 나의 길</p>
+					<p>Oh i believe</p>
+					<p>흘렸던 내 땀아</p>
+					<p>Oh i believe</p>
+					<p>흘린 만큼 나 딱 기억해</p>
+					<p>새 옷을 입고 다시 달려가</p>
+					<br>
+					<br>
+					<p>I have to go</p>
+					<p>I have to go</p>
+					<p>나의 세상으로 달려가</p>
+					<p>I have to go</p>
+					<p>I have to go</p>
+					<p>너의 대답이 들려오기 시작해</p>
+					<br>
+					<br>
+					<p>I have to go</p>
+					<p>I have to go</p>
+					<p>나의 세상으로 달려가</p>
+					<p>I have to go</p>
+					<p>I have to go</p>
+					<p>너의 대답이 들려오기 시작해</p>
+					<p>너의 대답이 들려와</p>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" class="ui-bar" data-theme="a" style="text-align: center;">
+			<div data-role="controlgroup" data-type="horizontal" data-theme="a">
+			
+				<a id="prev" data-role="button" href="first.html" data-rel="dialog">
+					<img src="../images/prev.png" width="25.6px" height="25.6px">
+				</a>
+				<a id="song_list" data-role="button" href="../sonicstones.html">
+					<img src="../images/list1.png" width="25.6px" height="25.6px">
+				</a> 
+				<a id="next" data-role="button" href="first.html" data-rel="dialog">
+					<img src="../images/next.png" width="25.6px" height="25.6px">
+				</a>
+			</div>
+		</div>
+	</div>
+	<script>
+	
+    var audio = document.getElementById("myAudio");
+   
+	//prev 버튼 클릭시 음악 멈추면서 이전곡으로 이동
+	$("#prev").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+	
+	//next 버튼 클릭시 음악 멈추면서 다음곡으로 이동
+	$("#next").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+
+	</script>
+
+
+</body>
+</html>

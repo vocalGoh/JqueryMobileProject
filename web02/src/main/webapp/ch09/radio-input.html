@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>radio-input</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1>머리말(header)영역</h1>
+		</div>
+		<div data-role="content">
+    <!-- data-role="controlgroup" : 두개이상의 버튼들을 그룹으로 묶는 역할 ,
+    fieldset태그내에서 활용 -->
+   <fieldset data-role="controlgroup">
+    <legend>학년</legend>
+    <!-- 라디오 버튼의 경우 그룹화된 버튼들의 name값은 모두 동일하게 처리해야 한다. -->
+     <label for="syear1">1학년</label>
+     <input type="radio" name="syear" id="syear1" value="1">
+     <label for="syear2">2학년</label>
+     <input type="radio" name="syear" id="syear2" value="2">
+     <label for="syear3">3학년</label>
+     <input type="radio" name="syear" id="syear3" value="3">
+     <label for="syear4">4학년</label>
+     <input type="radio" name="syear" id="syear4" value="4">
+   </fieldset>
+   
+   <fieldset data-role="controlgroup" data-type="horizontal">
+    <legend>학기</legend>
+     <label for="semester1">1학기</label>
+     <input type="radio" name="semester" id="semester1" value="1">
+     <label for="semester2">2학기</label>
+     <input type="radio" name="semester" id="semester2" value="2">
+   </fieldset> 
+
+		</div>
+		<div data-role="footer">
+			<h4>꼬리말(footer)영역</h4>
+		</div>
+	</div>
+</body>
+</html>

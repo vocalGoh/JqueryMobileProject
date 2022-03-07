@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>12.No Memory Party</title>
+<link rel="stylesheet"
+	href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<style type="text/css">
+.player { width: 100%; }
+img {margin:0px 0px 0px 7%;}
+</style>
+
+</head>
+<body>
+
+	<div data-role="page">
+	
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>SONIC STONES</h1>
+		</div>
+		
+		<div data-role="content">
+			<div class="ui-bar ui-bar-a" style="text-align:center;">12.No Memory Party</div>
+			<br> 
+			<img src="../images/before_the_storm.jpg" width="400px" height="400px" text-align="center">
+			<audio id="myAudio" class="player" controls="controls" preload="metadata" autoplay="autoplay">
+				<source src="12 .No Memory Party.mp3" type="audio/mp3">
+			</audio>
+
+			<div data-role="collapsible-set" data-theme="b"
+				data-content-theme="a">
+				<div data-role="collapsible">
+					<h3>lyrics</h3>
+					<p>Would you like to have a party tonight?</p>
+					<p>forget the hard works for a while</p>
+
+
+					<p>lets drink! better together~</p>
+					<p>sometimes I want to live my life without thinking.</p>
+					<p>im tired of life hitting the arrow everyday</p>
+					<p>better together I'm always alone</p>
+					<p>tonight I want to forget all the hard works and play with all my heart!</p>
+					<p>would you like to join me?</p>
+
+
+					<p>Would you like to have a party tonight?</p>
+					<p>forget the hard works for a while</p>
+
+
+					<p>lets drink! better together~</p>
+					<p>sometimes I just want to hangout with people I don't know</p>
+					<p>im tired of life hitting the arrow everyday</p>
+					<p>better together~ I'm always alone</p>
+					<p>tonight I want to forget all the hard works and play with all my heart!</p>
+					<p>would you like to join me?</p>
+
+
+					<p>When the party is over, my hell gate will open again,</p>
+					<p>when the party is over, I'll not be able to remember anything.</p>
+					<p>I'll not remember everything oh I made a mistake.</p>
+					<p>God damn it! just keep drinking!</p>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" class="ui-bar" data-theme="a" style="text-align: center;">
+			<div data-role="controlgroup" data-type="horizontal" data-theme="a">
+			
+				<a id="prev" data-role="button" href="track11.html" data-rel="dialog">
+					<img src="../images/prev.png" width="25.6px" height="25.6px">
+				</a>
+				<a id="song_list" data-role="button" href="../sonicstones.html">
+					<img src="../images/list1.png" width="25.6px" height="25.6px">
+				</a>  
+				<a id="next" data-role="button" href="track1.html" data-rel="dialog">
+					<img src="../images/next.png" width="25.6px" height="25.6px">
+				</a>
+			</div>
+		</div>
+	</div>
+		
+	
+	<script>
+	
+    var audio = document.getElementById("myAudio");
+   
+	//prev 버튼 클릭시 음악 멈추면서 이전곡으로 이동
+	$("#prev").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+	
+	//next 버튼 클릭시 음악 멈추면서 다음곡으로 이동
+	$("#next").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+	
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function greeting(name, position){
+	alert(name + " " + position + "님 안녕하세요?");
+}
+
+function greeting2(){
+	var name = document.getElementById("name").value;
+	var position = document.getElementById("position").value;
+ if(name==""){//빈값이면
+		alert("이름을 입력하세요.");
+	 document.getElementById("name").focus();//id로 접근
+	 return; //함수 종료
+	} 
+	if(position==""){
+		alert("직급을 입력하세요.");
+		document.getElementsByName("position").focus();//name으로 접근
+		return; //함수 종료
+	}
+	var str= name + " " + position + "님 안녕하세요?";
+	alert(str);
+	
+	//수동 submit
+	document.getElementById("form1").submit();
+}
+
+</script>
+
+</head>
+<body>
+ <button type="button" onclick="greeting('홍길동','부장')">클릭하세요</button>
+ <!-- 자바스크립트는 id와 name둘다 쓸 수 있다. html내에서는 id로 쓰는게 더 편하다.
+ jsp는 name의 속성값만 쓸 수 있다. request.getParameter()  -->
+ 
+ <form id="form1" method="post" action="func_result.jsp">
+  이름 : <input id="name" name="name"> <br>
+  직급 : <input id="position" name="position"> <br>
+  
+  <button type="button" onclick="greeting2()">확인</button>
+ </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>콜백함수</title>
+<script type="text/javascript">
+/* 콜백함수는 함수를 매개변수로 사용하는 함수를 말한다.
+또한 콜백함수는 클로저의 일종이다. 비동기방식의 함수로 사용되며
+특징은 함수 속에서 또 다시 다른 함수를 call한다.
+*/
+
+//message는 아래 check의 function함수를 기억
+function check(message){
+	alert(message);
+	var i=0;
+	var sum=0;
+	
+	while (true) {
+		i++;
+		sum += i;
+		if(sum>20){//sum이 20이 넘어가면
+			message();//클로저로서 변수 message();감으로 인해서
+			//기억된 check()의 익명함수 코드를 실행.
+			break;
+		}
+	}
+}
+
+check(function(){
+	alert("합이 20을 넘었습니다.");
+});
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

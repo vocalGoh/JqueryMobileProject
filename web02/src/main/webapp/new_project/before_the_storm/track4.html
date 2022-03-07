@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4.Awesome (Before The Storm Ver.)</title>
+<link rel="stylesheet"
+	href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<style type="text/css">
+.player { width: 100%; }
+img {margin:0px 0px 0px 7%;}
+</style>
+
+</head>
+<body>
+
+	<div data-role="page">
+	
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1>SONIC STONES</h1>
+		</div>
+		
+		<div data-role="content">
+			<div class="ui-bar ui-bar-a" style="text-align:center;">4. Awesome (Before The Storm Ver.)</div>
+			<br> 
+			<img src="../images/before_the_storm.jpg" width="400px" height="400px" text-align="center">
+			<audio id="myAudio" class="player" controls="controls" preload="metadata" autoplay="autoplay">
+				<source src="4. Awesome (Before The Storm Ver.).mp3" type="audio/mp3">
+			</audio>
+
+			<div data-role="collapsible-set" data-theme="b"
+				data-content-theme="a">
+				<div data-role="collapsible">
+					<h3>lyrics</h3>
+					<p>푸른 하늘위로 날아가는 꿈을 꾸어요</p>
+					<p>하늘이 보이지는 않지만</p>
+					<p>그림자 조차도 내게는 따라오지 않았죠</p>
+					<p>그래도 꿈을 꾸어요</p>
+					<p>내가 할 수 있는 것 중 하나를 택했죠</p>
+					<p>바로 앞도 보이지는 않지만</p>
+					<p>아파서 더이상 넘어질 힘이 네겐 없네요.</p>
+					<p>그래도 꿈을 꾸어요.</p>
+					<br>
+					<br>
+					<p>다시 가요! 천천히라도</p>
+					<p>나를 믿고 또 다시 거친 파도위로</p>
+					<p>단 한번만이라도</p>
+					<p>한번이라도</p>
+					<p>내가 주인공이 될래요!</p>
+					<br>
+					<br>
+					<p>단 한번이라도</p>
+					<p>단 한번이라도</p>
+					<p>I'm in my dream every day</p>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" class="ui-bar" data-theme="a" style="text-align: center;">
+			<div data-role="controlgroup" data-type="horizontal" data-theme="a">
+			
+				<a id="prev" data-role="button" href="track3.html" data-rel="dialog">
+					<img src="../images/prev.png" width="25.6px" height="25.6px">
+				</a>
+				<a id="song_list" data-role="button" href="../sonicstones.html">
+					<img src="../images/list1.png" width="25.6px" height="25.6px">
+				</a>
+				<a id="next" data-role="button" href="track5.html" data-rel="dialog">
+					<img src="../images/next.png" width="25.6px" height="25.6px">
+				</a>
+			</div>
+		</div>
+	</div>
+		
+	
+	<script>
+	
+    var audio = document.getElementById("myAudio");
+   
+	//prev 버튼 클릭시 음악 멈추면서 이전곡으로 이동
+	$("#prev").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+	
+	//next 버튼 클릭시 음악 멈추면서 다음곡으로 이동
+	$("#next").on("click", function() {
+	// 음악 스톱
+	audio.pause();
+	});
+
+	
+	</script>
+
+
+</body>
+</html>

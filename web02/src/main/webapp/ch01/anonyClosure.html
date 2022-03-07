@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>함수를 리턴하는 함수와 클로저</title>
+<script type="text/javascript">
+function outerFunction(name) {
+	var output = 'Hello' + name + '!';
+	return function(){
+		alert(output);
+	};
+}
+
+outerFunction('kim')();//함수호출 역할을 해야하기 때문에
+//();를 추가. 즉, 외부함수의 멤버지역변수와 리턴받는 내부익명함수가
+//적절히 함께 사용되어 alert창으로 결과값을 출력.
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="stylesheet"
+  href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script
+  src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+  <div data-role="page" id="page1">
+    <div data-role="header" data-position="fixed">
+      <h1>머리말(header)영역</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#page2">page2</a></li>
+          <li><a href="#page3">page3</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="content">
+      <p>내용(content)영역</p>
+      <h1>첫번째 페이지</h1>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#" data-icon="plus">추가</a></li>
+          <li><a href="#" data-icon="minus">삭제</a></li>
+          <li><a href="#" data-icon="check" class="ui-btn-active">확인</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div data-role="page" id="page2">
+    <div data-role="header" data-position="fixed">
+      <h1>머리말(header)영역</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#page1" data-direction="reverse">page1</a></li>
+          <li><a href="#page2" class="ui-btn-active">page2</a></li>
+          <li><a href="#page3">page3</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="content">
+      <p>내용(content)영역</p>
+      <h1>두번째 페이지</h1>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#" data-icon="plus">추가</a></li>
+          <li><a href="#" data-icon="minus">삭제</a></li>
+          <li><a href="#" data-icon="check"
+            class="ui-state-persist">확인</a></li>
+          <!-- ui-state-persist은 active(선택상태)가 변경되지 않고 유지됨  -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div data-role="page" id="page3">
+    <div data-role="header" data-fullscreen="true" data-position="fixed">
+      <h1>머리말(header)영역</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#page1" data-direction="reverse">page1</a></li>
+          <li><a href="#page2" data-direction="reverse">page2</a></li>
+          <li><a href="#page3" class="ui-btn-active">page3</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="content">
+      <p>내용(content)영역</p>
+      <h1>세번째 페이지</h1>
+    </div>
+    <div data-role="footer" data-fullscreen="true" data-position="fixed">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#" data-icon="plus">추가</a></li>
+          <li><a href="#" data-icon="minus">삭제</a></li>
+          <li><a href="#" data-icon="check"
+            class="ui-state-persist">확인</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

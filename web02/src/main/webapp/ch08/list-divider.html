@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>list-divider.html</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header" >
+			<h1>머리말(header)영역</h1>
+		</div>
+		<div data-role="content">
+			<p>내용(content)영역</p>
+   <!-- data-filter="true"는 검색기능을 제공하며 data-role="listdivider":li태그내에
+    쓰며 원하는 항목을 찾기 쉽게 그룹 헤더와 같은 역할을 한다.-->   
+   <ul data-role="listview" data-filter="true"
+    data-filter-placeholder="검색키워드를 입력하세요">
+    <li data-role="listdivider">ㄱ</li>
+    <li><a href="#">강</a></li>
+    <li data-role="listdivider" data-theme="b">ㅅ</li>
+    <li><a href="#">산</a></li>
+    <li><a href="#">산마루</a></li>
+    <li data-role="listdivider">ㅎ</li>
+    <li><a href="#">하늘</a></li>
+   </ul>   
+		</div>
+		<div data-role="footer">
+			<h4>꼬리말(footer)영역</h4>
+		</div>
+	</div>
+</body>
+</html>

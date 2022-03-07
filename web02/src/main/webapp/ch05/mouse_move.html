@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../include/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+/* $(function(){
+	
+}); */
+
+$(document).mousemove(function(e){
+	console.log(e); //e: 마우스이벤트 참조변수
+	
+	$("#log").html("<h2 style='color:red;'>x:"
+	+e.pageX+",y:"+e.pageY+"</h2>");
+});
+
+</script>
+
+</head>
+<body>
+<div id="log"></div>
+</body>
+</html>

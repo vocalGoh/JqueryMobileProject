@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>메인 페이지</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<style type="text/css">
+.player { width: 100%; }
+img {margin:0px 0px 0px 7%;}
+</style>
+
+</head>
+<body>
+
+	<div data-role="dialog" id="page1">
+		<div data-role="header" data-position="fixed">
+			<h1>고인수의 음악 스트리밍</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page1" data-rel="dialog">아티스트</a></li>
+					<li><a href="#page2" data-rel="dialog">유튜브</a></li>
+					<li><a href="#page3" data-rel="dialog">스트리밍</a></li>
+				</ul>
+
+			</div>
+		</div>
+		<div data-role="content">
+	
+			<h2>아티스트</h2>
+			
+			<ul data-role="listview" data-inset="true" data-count-theme="a">
+				<!--2. 카운트버블 효과를 내기위해서는 <span>태그 내 class="ui-li-count" 속성을 적용-->
+				<li><a href="sonicstones.html" data-rel="dialog">SONIC STONES</a><span class="ui-li-count">3</span></li>
+				<li><a href="#" data-rel="dialog">잔나비</a><span class="ui-li-count">0</span></li>
+				<li><a href="#" data-rel="dialog">아이자야 씩스티원</a><span class="ui-li-count">0</span></li>
+				<li><a href="#" data-rel="dialog">이적</a><span class="ui-li-count">0</span></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">
+		<h2>원하시는 아티스트를 선택해 주세요</h2>
+			</div>
+	</div>
+
+
+
+
+
+	<div data-role="page" id="page2">
+		<div data-role="header" data-position="fixed">
+			<h1>고인수의 음악 스트리밍</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page1" data-rel="dialog">아티스트</a></li>
+					<li><a href="#page2" data-rel="dialog">유튜브</a></li>
+					<li><a href="#page3" data-rel="dialog">스트리밍</a></li>
+				</ul>
+
+			</div>
+		</div>
+		<div data-role="content">
+			<p>내용(content)영역</p>
+			<h1>두번째 페이지</h1>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h2>원하시는 아티스트를 선택해 주세요</h2>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div data-role="page" id="page3">
+		<div data-role="header" data-position="fixed">
+			<h1>고인수의 음악 스트리밍</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page1" data-rel="dialog">아티스트</a></li>
+					<li><a href="#page2" data-rel="dialog">유튜브</a></li>
+					<li><a href="#page3" data-rel="dialog">스트리밍</a></li>
+				</ul>
+
+			</div>
+		</div>
+		<div data-role="content">
+			<p>내용(content)영역</p>
+			<h1>세번째 페이지</h1>
+		</div>
+		<div data-role="footer" data-position="fixed">
+		<h2>원하시는 아티스트를 선택해 주세요</h2>
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>
+
+
